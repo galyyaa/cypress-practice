@@ -13,7 +13,7 @@ describe('example to-do app', () => {
         cy.get('input#password').type('SuperSecretPassword!');
         cy.get('button[type="submit"').click();
         cy.get('div#flash').should('have.text', '\n Your username is invalid!\n ×\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
-        cy.url().should('eq', 'https://the-internet.herokuapp.com/secure');
+        cy.url().should('eq', 'https://the-internet.herokuapp.com/login');
     })
 })
 
